@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-yatj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0054-tenant/ci10t-776-0054-app/devfile-sample-yatj@sha256:3249ab1bdab73e63b58bfa8b1b4ebab6f581db76e865dbb48882bb0380ab1d03
+        name: my-nodejs
+        resources: {}
+status: {}
